@@ -7,7 +7,7 @@ function dumper:__Dump()
         return
     end
 
-    if not self.script:IsA('ModuleScript') or typeof(self.script) ~= 'Instance' then
+    if not (self.script:IsA('ModuleScript') or not self.script:IsA('LocalScript')) or typeof(self.script) ~= 'Instance' then
         return
     end
 
