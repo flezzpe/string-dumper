@@ -7,7 +7,7 @@ function dumper:__Dump()
         return
     end
 
-    if (not self.script:IsA('ModuleScript') or not self.script:IsA('LocalScript')) or typeof(self.script) ~= 'Instance' then
+    if not (self.script:IsA('ModuleScript') or self.script:IsA('LocalScript')) or typeof(self.script) ~= 'Instance' then
         return
     end
 
@@ -44,7 +44,7 @@ end
 for _, script in getscripts() do
     dumper.__Dump({
         script = script,
-        key_word = 'socialservice'
+        key_word = 'getserivce'
     })
 
     task.wait(0)
@@ -53,7 +53,7 @@ end
 for _, module_script in getloadedmodules() do
     dumper.__Dump({
         script = module_script,
-        key_word = 'socialservice'
+        key_word = 'getserivce'
     })
     
     task.wait(0)
