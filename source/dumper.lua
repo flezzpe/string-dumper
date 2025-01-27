@@ -1,4 +1,5 @@
 --// @java.dll
+--// this code could be shortened down to 5 lines, but sorry for what you see now, I won't fix it lol XD
 
 local dumper = {}
 
